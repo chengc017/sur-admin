@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.2</tlib-version>
+	<short-name>surfn</short-name>
+	<function>
+		<name>tinyIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getTinyIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>tinyNoIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getUnearnedTinyIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>middleIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getMiddleIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>middleNoIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getUnearnedMiddleIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>middleExtIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getMiddleExtIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>middleExtNoIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getUnearnedMiddleExtIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>largeIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getLargeIconUri(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>largeNoIcon</name>
+		<function-class>com.sohu.sur.util.MedalUtil</function-class>
+		<function-signature>java.lang.String getUnearnedLargeIconUri(java.lang.String)</function-signature>
+	</function>
+</taglib>

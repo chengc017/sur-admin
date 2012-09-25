@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="false" monitoring="off"
+         dynamicConfig="true">
+
+    <diskStore path="java.io.tmpdir"/>
+     
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="120"
+            overflowToDisk="true"
+            diskSpoolBufferSizeMB="30"
+            maxElementsOnDisk="10000000"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"
+            statistics="false"
+            />
+
+    <cache name="dayLimit"
+           maxElementsInMemory="200000"
+           maxElementsOnDisk="300000"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="30"
+           timeToLiveSeconds="600"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+            />
+            
+    <cache name="mallItems"
+           maxElementsInMemory="10"
+           eternal="false"
+           overflowToDisk="false"
+           diskSpoolBufferSizeMB="30"
+           timeToLiveSeconds="600"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+            />
+    <cache name="mallLogs"
+           maxElementsInMemory="10"
+           eternal="false"
+           overflowToDisk="true"
+           diskSpoolBufferSizeMB="30"
+           timeToLiveSeconds="300"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+            />
+    <cache name="users"
+           maxElementsInMemory="10000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="3600"
+            overflowToDisk="true"
+            diskSpoolBufferSizeMB="30"
+            maxElementsOnDisk="100000"
+            diskPersistent="false"
+            diskExpiryThreadIntervalSeconds="120"
+            memoryStoreEvictionPolicy="LRU"
+            statistics="false"
+            />
+
+</ehcache>
